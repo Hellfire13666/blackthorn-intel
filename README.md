@@ -1,11 +1,17 @@
 # BLACKTHORN INTEL v0.8.1 // DUAL APPROVED ART EDITION
 
+![BLACKTHORN approved tool command-deck artwork](art/BLACKTHORN-TOOL-COMMAND-DECK.png)
+
 Two approved, separate artworks, with no changes to the intelligence engine:
 
 1. **Tool startup and `--cover`:** `art/BLACKTHORN-TOOL-COMMAND-DECK.png`, the professional tool-suite illustration. It opens at native resolution in an external picture viewer, not as pixelated terminal characters. The numbered terminal menu still works independently.
 2. **Results image board / `--board-art`:** `art/BLACKTHORN-APPROVED-ROSIE-TATTOO.png`, the exact original Rosie + wolf + tattoo image, embedded in HTML at natural aspect ratio and full available width. Results appear after the artwork.
 
 Neither file is altered, compressed, cropped, or replaced. Artwork is decorative: illustrated panel text is not a description of implemented modules. Trust the live terminal `--examples` and CLI `--help` for the real commands.
+
+## Approved results artwork
+
+![BLACKTHORN approved Rosie and wolf results artwork](art/BLACKTHORN-APPROVED-ROSIE-TATTOO.png)
 
 ## Install a separate version on Debian-based Linux
 
