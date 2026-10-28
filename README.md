@@ -13,26 +13,59 @@ Neither file is altered, compressed, cropped, or replaced. Artwork is decorative
 
 ![BLACKTHORN approved Rosie and wolf results artwork](art/BLACKTHORN-APPROVED-ROSIE-TATTOO.png)
 
-## Install a separate version on Debian-based Linux
+## Install from GitHub on Debian-based Linux
 
-Download `BLACKTHORN-INTEL-v0.8.1-DUAL-ART.zip` into Downloads:
+BLACKTHORN is currently a **private beta**. GitHub access is required until the repository is made public. The installer uses Python 3 and does not require root privileges to launch.
+
+From a working directory of your choice, use this one-paste installation:
 
 ```bash
-cd "$HOME/Downloads" &&
-if [ -e "$HOME/BLACKTHORN-INTEL-v0.8.1" ]; then
-  echo '[STOP] Existing installation preserved'
-else
-  unzip -q BLACKTHORN-INTEL-v0.8.1-DUAL-ART.zip -d "$HOME" &&
-  cd "$HOME/BLACKTHORN-INTEL-v0.8.1" &&
-  bash ./INSTALL.sh &&
-  ./RUN.sh
-fi
+sudo apt update && sudo apt install -y git python3 &&
+git clone https://github.com/Hellfire13666/blackthorn-intel.git &&
+cd blackthorn-intel &&
+bash ./INSTALL.sh &&
+bash ./RUN.sh --no-art
 ```
+
+If you already have BLACKTHORN installed, **do not clone over it**. Open your existing working folder and run `git pull --ff-only origin main` to receive documentation updates. Back up any local changes before updating code.
+
+## Explore the 12 modules
+
+| Number | Module | Purpose |
+| --- | --- | --- |
+| 01 | NAMEHUNT | Public name research |
+| 02 | SHADOWSEARCH | Username/profile references |
+| 03 | VEILMAIL | Email-domain syntax and opt-in public MX, SPF, DMARC DNS |
+| 04 | NUMBERHEX | Offline phone-number formatting and metadata |
+| 05 | NETSPECTER | Opt-in public DNS intelligence |
+| 06 | GEOHUNT | Offline mapping of user-supplied coordinates |
+| 07 | SIGNALTRACE | Offline BSSID identifier inspection |
+| 08 | PIXELCRYPT | Local file/image metadata |
+| 09 | WEBSCOUT | Public search references, opt-in indexed search, domain RDAP |
+| 10 | LINKFORGE | Opt-in public organizational entity search |
+| 11 | CASEVAULT | Local case records, notes, and source links |
+| 12 | TOOLKIT | Help and examples |
+
+These modules have different levels of validation. Indexed results and entity matches are research leads, not verified identities. Public DNS and registration records do not verify mailbox owners, phone subscribers, or physical locations.
+
+## Beginner command examples
+
+```bash
+bash ./RUN.sh --no-art
+bash ./RUN.sh --module 3 --query 'test@gmail.com' --live --no-art --dump
+bash ./RUN.sh --module 9 --query 'example.org' --live --no-art --dump
+bash ./RUN.sh --module 10 --query 'Hooters' --live --no-art --dump
+bash ./RUN.sh --module 11 --query 'create Public Research' --no-art
+bash ./RUN.sh --module 11 --query 'list' --no-art
+bash ./RUN.sh --examples
+```
+
+All cases and reports are local and excluded from Git by `.gitignore`. Never publish personal case records or credentials. Network operations are opt-in. Use `--no-art` for terminal-only operation.
 
 ## Art recipes
 
 ```bash
-cd "$HOME/BLACKTHORN-INTEL-v0.8.1"
+cd blackthorn-intel
 ./RUN.sh                   # Tool command-deck in picture viewer + console menu on graphical terminal
 ./RUN.sh --cover           # Tool command-deck alone
 ./RUN.sh --original-cover  # Original Rosie tattoo piece alone
