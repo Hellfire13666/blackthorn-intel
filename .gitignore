@@ -1,0 +1,31 @@
+# Private local research
+BlackthornReports/
+*Reports/
+*.log
+
+# Credentials and configuration
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*secret*
+*token*
+
+# Backups
+*.bak
+*.backup
+*.before-*
+*before-fix*
+*.orig
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Local system files
+.DS_Store
+*.swp
