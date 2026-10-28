@@ -1,7 +1,7 @@
 # BLACKTHORN INTEL v0.8.1 // DUAL APPROVED ART EDITION
 
 <!-- GLITCHBYTE-VISITOR-BADGE:START -->
-[![Page Views](https://hitscounter.dev/api/hit?url=https%3A%2F%2Fgithub.com%2FHellfire13666%2Fblackthorn-intel&label=PAGE%20VIEWS&icon=skull&color=%23FF1493&style=flat-square)](https://github.com/Hellfire13666/blackthorn-intel)
+[![Page Views](https://hitscounter.dev/api/hit?url=https%3A%2F%2Fgithub.com%2FHellfire13666%2Fblackthorn-intel&label=PAGE%20VIEWS&icon=emoji-smile&color=%23FF1493&style=flat-square)](https://github.com/Hellfire13666/blackthorn-intel)
 <!-- GLITCHBYTE-VISITOR-BADGE:END -->
 
 ![BLACKTHORN approved tool command-deck artwork](art/BLACKTHORN-TOOL-COMMAND-DECK.png)
