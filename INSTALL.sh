@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 cd "$(dirname "$(readlink -f "$0")")"
-echo "◆ BLACKTHORN INTEL // LIVE DUMP v0.7.0"
+echo "◆ BLACKTHORN INTEL // v0.8.1 // INSTALL"
 command -v python3 >/dev/null || { echo "[STOP] Python 3 needed: sudo apt install python3"; exit 1; }
 chmod u+x RUN.sh
 mkdir -p "$HOME/.local/bin"
